@@ -1,0 +1,30 @@
+@import '../../assets/styles/Variables.scss';
+
+.btn{
+    
+    &-Primary {
+        @include Button ($blueButton, $white,'');
+        transition: none!important;
+        
+        &:hover {
+            background: linear-gradient(to right,#5482d0 ,#5170fd);
+            color: #fff;
+        }
+    }
+    &-Secondary{
+        @include Button ($secondaryBackGround, $highLightColor,'');
+    }
+    &-notification {
+        @include Button ($secondaryBackGround, $highLightColor,"btn-notification");
+    }
+    &-more {
+        background-color: transparent;
+        border: none;
+
+        &-upload {
+            color: $blueButton;
+        }
+    }
+   
+}
+

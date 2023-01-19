@@ -1,0 +1,31 @@
+@import '../../assets/styles/Variables.scss';
+@import '../../assets/styles/BreakPoints.scss';
+
+.headerHolder {
+    border-bottom: 1px solid #ebebeb;
+    padding: 10px 15px;
+    align-items: center;
+
+    h5 {
+        @include breakpoint (large) {
+            font-size: 12px;
+        }
+        
+    }
+
+    button {
+        margin-right: 15px;
+    }
+
+    .userImage{
+        background-image: url('../../assets/images/user.jpeg');
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        cursor: pointer;
+        border-radius: 100%;
+        width: 36px;
+        height: 36px;
+    }
+}
+

@@ -1,0 +1,56 @@
+@import '../../assets/styles/Variables.scss';
+@import '../../assets/styles/BreakPoints.scss';
+
+
+.homeBodyHolder_watchList {
+    padding: 20px 0;
+    border-bottom: 1px solid #ebebeb;
+    h6 {
+        margin-bottom: 30px;
+        @include breakpoint (large) {
+            font-size: 13px;
+        }
+    }
+}
+
+.cyptoHolder {
+    &_cryptoIcon {
+        span {
+            font-size: 30px;
+            color: #ff8f00;
+            @include breakpoint (large) {
+                font-size: 25px;
+            }
+        }
+        
+    }
+    &_cryptoName {
+        margin-left: 15px;
+        p{
+            margin: 0 0 0 0;
+            font-weight: 600;
+        }
+        span {
+            font-size: 15px;
+            color : $normalTextColor;
+        }
+        
+    }
+}
+
+.watchList {
+    list-style: none;
+    padding: 0;
+    li{
+        margin-right: 35px;
+        span {
+            @include breakpoint (large) {
+                font-size: 12px;
+            }
+            
+        }
+    }
+    &_buy {
+        color: $blueButton;
+    }
+}

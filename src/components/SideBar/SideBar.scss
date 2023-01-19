@@ -1,0 +1,48 @@
+@import "../../assets/styles/Variables.scss";
+@import "../../assets/styles/BreakPoints.scss";
+
+.itemsHolder {
+    li{
+        margin-bottom: 15px;
+        padding: 10px 15px;
+        display: flex;
+        font-size: 14px;
+        @include breakpoint (large) {
+            font-size: 10px;
+        }
+
+        a {
+            color: $highLightColor;
+            width: 100%;
+        }
+    }
+    span {
+        margin-right: 20px;
+
+        svg {
+            font-size: 20px;
+        }
+    }
+}
+
+.activeLink {
+    background-color: $backgroundColor;
+    border-radius: $borderButtons;
+    @include breakpoint (large) {
+        background-color: transparent;
+    }
+
+    a {
+        color: $activeLinks!important;
+    }
+}
+
+.CircularProgressbar {
+    width: 55px;
+    margin: 10px 0 30px 0;
+    padding: 0 0 0 15px;
+    stroke: $white;
+    @include breakpoint (large) {
+        width: 40px;
+    }
+}

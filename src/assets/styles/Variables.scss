@@ -1,0 +1,50 @@
+
+@import './BreakPoints.scss';
+//  colors
+$highLightColor : #2e2e30;
+$normalTextColor : #c6c8cf;
+$activeLinks : #0b48db;
+$blueButton: rgb(0 82 253);
+$white : #fff;
+// backgtound buttons and active links 
+$backgroundColor :#f1f3f6;
+$secondaryBackGround :#edf0f3;
+
+// border radius
+$borderButtons : 50px;
+
+
+// Buttons 
+@mixin Button ($backgroundColorButton, $textColor, $type){
+    background-color: $backgroundColorButton;
+    color: $textColor;
+    font-size: 16px;
+    border: none;
+    border-radius: 15px;
+    padding: 5px 30px;
+    @include breakpoint (large) {
+        font-size: 12px;
+    }
+    
+
+    @if $type == "btn-notification" {
+        
+        padding: 6px 10px;
+        border-radius: 100%;
+    }
+}
+
+
+
+// List of Items
+.itemsHolder {
+    list-style: none;
+    padding: 0 0 0 0;
+    cursor: pointer;
+}
+
+// links styles
+
+.linksStyle {
+    text-decoration: none;
+}

@@ -1,0 +1,35 @@
+@import '../../assets/styles/Variables.scss';
+
+.articleTypeHolder {
+
+    margin-bottom: 8px;
+
+    &_articleSource {
+        
+        &_icon {
+            background-color: blue;
+            width: 23px;
+            height: 23px;
+            border-radius: 100%;
+            color: $white;
+            font-weight: 600;
+            text-align: center;
+            margin-right: 10px;
+            font-size: 12px;
+            margin-top: 1px;
+        }
+        span {
+            color: $normalTextColor;
+            font-size: 13px;
+        }
+        p{
+            margin-right: 7px;
+            font-size: 13px;
+            font-weight: 600;
+            margin: 0;
+        }
+        &_title {
+            margin-top: 3px;
+        }
+    }
+}

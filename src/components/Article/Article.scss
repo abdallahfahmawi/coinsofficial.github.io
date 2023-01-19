@@ -1,0 +1,53 @@
+@import '../../assets/styles/Variables.scss';
+@import '../../assets/styles/BreakPoints.scss';
+
+
+.articleHolder {
+
+    margin: 20px 0;
+
+    &_image {
+        width: 320px;
+        height: auto;
+        img {
+            width: 100%;
+        }
+    }
+
+    &_content {
+        padding: 19px 15px;
+
+        &_footer {
+
+            button {
+                font-size: 20px;
+            }
+
+            span {
+                margin: 0 8px 0 5px;
+            }
+
+            .favorite {
+                color: red;
+            }
+        }
+    }
+
+    &_content_text {
+        
+        p:first-child {
+            font-size: 15px;
+            font-weight: 700;
+            margin-bottom: 8px;
+            color: #000;
+        }
+        p{
+            font-size: 13px;
+            color: #a8aaaa;
+            font-weight: 400;
+        }
+       
+    }
+   
+    
+}
